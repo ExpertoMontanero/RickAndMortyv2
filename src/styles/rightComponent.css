@@ -1,0 +1,121 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+/* boxes */
+
+.episode-box {
+  position: relative;
+  display: flex;
+}
+
+.title-air-box {
+  margin-left: 3.9em;
+  margin-top: -0.1em;
+}
+
+.vl {
+  position: absolute;
+  height: 7em;
+  left: 7.5em;
+  background: var(--pale-gray);
+width: 1px;
+  border: none;
+}
+
+.horizontal-line {
+  display: none;
+}
+
+/* text */
+
+.episode-name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.563em;
+  line-height: 1em;
+  color: black;
+}
+
+.episod-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.563em;
+  color: var(--pale-blue);
+}
+
+.air-date {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25em;
+  color: var(--gray);
+  margin-top: 0em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1550px) {
+  .episode-name {
+    font-size: 1.4em;
+  }
+  .episod-title {
+    font-size: 1.4em;
+  }
+  .air-date {
+    font-size: 1.15em;
+  }
+  .vl {
+    left: 6.5em;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .episode-name {
+    font-size: 1.2em;
+  }
+  .episod-title {
+    font-size: 1.2em;
+  }
+  .air-date {
+    font-size: 1.05em;
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  .vl {
+    display: none;
+  }
+  .episode-box {
+    margin-left: -3em;
+    display: block;
+    max-width: 90vw;
+  }
+  .episode-name {
+    margin: 0;
+    font-size: 1.15em;
+    letter-spacing: 0.5px;
+  }
+  .episod-title {
+    margin-top: 1em;
+    font-size: 1.22em;
+  }
+  .air-date {
+    margin: 0;
+  }
+  .title-air-box {
+    margin-left: 0em;
+    font-size: 0.95em;
+  }
+  .horizontal-line {
+    display: block;
+    background: var(--pale-gray);
+    height: 1px;
+    border: none;
+    margin: 1.4em 0;
+  }
+}
