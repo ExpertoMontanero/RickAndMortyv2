@@ -1,7 +1,4 @@
-/* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
-
-/* boxes */
 
 .episode-box {
   position: relative;
@@ -25,8 +22,6 @@
 .horizontal-line {
   display: none;
 }
-
-/* text */
 
 .episode-name {
   font-family: "Lato";
@@ -70,6 +65,7 @@ a:link {
   }
   .vl {
     left: 6.5em;
+    height: 8em;
   }
 }
 
@@ -113,7 +109,7 @@ a:link {
   .horizontal-line {
     display: block;
     background: var(--pale-gray);
-    height: 1px;
+    height: 2px;
     border: none;
     margin: 1.4em 0;
   }

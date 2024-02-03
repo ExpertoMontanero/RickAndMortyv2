@@ -29,6 +29,8 @@
 
 @media screen and (max-width: 950px) {
   .button {
-    margin-left: 0.5em;
+    margin-left: -0.2em;
+    margin-top: -0.3em;
+    scale: 0.75;
   }
 }

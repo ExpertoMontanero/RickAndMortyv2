@@ -9,7 +9,7 @@ export default function LeftComponent() {
       </h2>
       <img
         className="image-main"
-        src="public\images\image.png"
+        src="\images\image.png"
         alt="image of Rick and Morty in a portal"
       ></img>
     </div>

@@ -24,6 +24,7 @@
 .image-main {
   margin-top: 0.3em;
   margin-left: -1em;
+  all: inherit;
 }
 
 @media screen and (max-width: 1550px) {
@@ -101,3 +102,8 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .image-main {
+    width: 23em;
+  }
+}

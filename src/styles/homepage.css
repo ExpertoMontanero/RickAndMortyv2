@@ -63,15 +63,13 @@ body {
 
 @media screen and (max-width: 950px) {
   .main-container {
-  
     margin: 0.5em 0em;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .right-side {
- width: 80vw;
+    width: 80vw;
     margin-left: 3em;
   }
   .left-side {

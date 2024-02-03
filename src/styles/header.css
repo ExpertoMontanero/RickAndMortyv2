@@ -25,6 +25,7 @@
     font-size: 1.9em;
   }
 }
+
 .header-mobile {
   display: none;
   @media (max-width: 949px) {
@@ -37,8 +38,8 @@
   }
 }
 
-@media screen and (max-width:320px){
-  .header-label{
+@media screen and (max-width: 320px) {
+  .header-label {
     font-size: 1.6em;
   }
 }
