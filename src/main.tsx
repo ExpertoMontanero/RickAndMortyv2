@@ -11,21 +11,19 @@ const client = new ApolloClient({
   uri: "https://rickandmortyapi.com/graphql",
   cache: new InMemoryCache(),
 });
-client
-  .query({
-    query: gql`
-      query GetEpisodes {
-        episodes(filter: { episode: "S04" }) {
-          results {
-            episode
-            name
-            air_date
-          }
+client.query({
+  query: gql`
+    query GetEpisodes {
+      episodes(filter: { episode: "S04" }) {
+        results {
+          episode
+          name
+          air_date
         }
       }
-    `,
-  })
-  .then((result) => console.log(result));
+    }
+  `,
+});
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <ApolloProvider client={client}>

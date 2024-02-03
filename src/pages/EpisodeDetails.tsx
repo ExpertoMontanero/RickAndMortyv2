@@ -84,26 +84,32 @@ const EpisodeDetails: React.FC = () => {
   return (
     <div>
       <Header />
-      <div className="main-container">
-        <div className={isResolutionAbove1000 ? "left-side" : " "}>
+      <div className="main-container main-container-mobile-ep">
+        <div
+          className={isResolutionAbove1000 ? "left-side" : " "}
+        >
           <Button name={"Episodes"} />
-          <h2 className="title-text title-text-ep">
-            Characters of the{" "}
-            <span className="highlight">
-              {EpisodeNumber === 1
-                ? "1st"
-                : EpisodeNumber === 2
-                ? "2nd"
-                : EpisodeNumber + "th"}
-            </span>{" "}
-            episode of the <span className="highlight">4th </span>
-            season of the series <span className="colored">Rick and Morty</span>
-          </h2>
-          <img
-            src="\public\images\image.png"
-            className="theme-img theme-img-ep"
-            alt="image of Rick and Morty in a portal"
-          ></img>
+          <div className="left-side-ep">
+            <h2 className="title-text title-text-ep">
+              Characters of the{" "}
+              <span className="highlight">
+                {EpisodeNumber === 1
+                  ? "1st"
+                  : EpisodeNumber === 2
+                  ? "2nd"
+                  : EpisodeNumber + "th"}
+              </span>{" "}
+              episode of the <span className="highlight">4th </span>
+              season of the series{" "}
+              <span className="colored">Rick and Morty</span>
+            </h2>
+            <img
+              src="\images\image.png"
+              className="theme-img theme-img-ep"
+              alt="image of Rick and Morty in a portal"
+              
+            ></img>
+          </div>
         </div>
         <div className="right-side right-side-ep nowrap">
           <ul>
@@ -133,7 +139,7 @@ const EpisodeDetails: React.FC = () => {
                     {" "}
                     {character.species}
                   </div>
-                
+                  <hr className="horizontal-line horizontal-line-ep"></hr>
                 </li>
               )
             )}
