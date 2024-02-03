@@ -7,7 +7,11 @@ export default function LeftComponent() {
         Episodes of the <span className="highlight"> 4th</span> season of the
         series <span className="colored">Rick and Morty</span>
       </h2>
-      <img className="image-main" src="public\images\image.png"></img>
+      <img
+        className="image-main"
+        src="public\images\image.png"
+        alt="image of Rick and Morty in a portal"
+      ></img>
     </div>
   );
 }

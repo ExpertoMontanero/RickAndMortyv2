@@ -1,0 +1,43 @@
+.title-text-ep {
+  margin-top: 0.45em;
+}
+
+.character-info {
+  list-style-type: none;
+}
+
+.character-info-ep {
+  margin-left: -2.5em;
+}
+
+.character-name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.563em;
+  color: var(--pale-blue);
+}
+
+/* .character-name-ep {
+ 
+} */
+
+.character-species {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25em;
+  color: var(--gray);
+  margin-top: 0em;
+}
+
+.character-species-ep {
+  margin-top: 0.8em;
+  margin-bottom: 1.8em;
+}
+
+.theme-img-ep {
+  margin-left: -1em;
+  margin-top: -0.6em;
+}
+ 

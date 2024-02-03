@@ -18,7 +18,7 @@
   height: 7em;
   left: 7.5em;
   background: var(--pale-gray);
-width: 1px;
+  width: 1px;
   border: none;
 }
 
@@ -86,7 +86,6 @@ a:link {
 }
 
 @media screen and (max-width: 950px) {
-
   .vl {
     display: none;
   }

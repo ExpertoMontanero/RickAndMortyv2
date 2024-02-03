@@ -1,10 +1,13 @@
 import "../styles/button.css";
 import { useNavigate } from "react-router-dom";
-export default function BackButton({ props }) {
+interface ButtonProps {
+  name: string;
+}
+export default function Button({ name }: ButtonProps) {
   const navigate = useNavigate();
   return (
-    <button className="back-button" onClick={() => navigate(-1)}>
-      ↩ {props.name}
+    <button className="button" onClick={() => navigate(-1)}>
+      ↩ {name}
     </button>
   );
 }
